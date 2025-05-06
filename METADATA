@@ -1,0 +1,16 @@
+name: "automotive-design-compose-protos"
+description:
+    "DesignCompose protobuf message repository "
+    ""
+
+third_party {
+  identifier {
+    type: "Git"
+    value: "https://github.com/google/automotive-design-compose-protos"
+    primary_source: true
+    version: "v0.0.1"
+  }
+  license_type: NOTICE
+  version: "v0.0.1"
+  last_upgrade_date { year: 2025 month: 5 day: 5 }
+}
