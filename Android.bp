@@ -1,0 +1,20 @@
+java_library {
+    name: "libautomotive-design-compose-protos",
+    visibility: ["//visibility:public"],
+    proto: {
+        type: "lite",
+        include_dirs: [
+            "external/protobuf/src",
+            "external/automotive-design-compose-protos/definition",
+            "external/automotive-design-compose-protos/layout_interface",
+            "external/automotive-design-compose-protos/live_update",
+        ],
+        canonical_path_from_root: false,
+    },
+    srcs: [
+        ":libprotobuf-internal-protos",
+        "definition/**/*.proto",
+        "layout_interface/**/*.proto",
+        "live_update/**/*.proto",
+    ],
+}
